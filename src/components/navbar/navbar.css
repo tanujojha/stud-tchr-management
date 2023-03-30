@@ -1,0 +1,17 @@
+.navbardiv{
+  background-color: rgb(25, 118, 210);
+  padding: 6px 0;
+}
+
+.headdiv{
+  
+}
+
+.head{
+  font-family: var(--font_Julee);
+  color: white;
+}
+
+.head:hover{
+  color: rgb(186, 199, 211);
+}

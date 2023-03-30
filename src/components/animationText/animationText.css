@@ -1,0 +1,44 @@
+.animdiv{
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    perspective: ;
+}
+
+.animtext{
+    font-size: 100px;
+    font-family: var(--font_Julee);
+    animation: bounce 1.4s ease-in infinite;
+    color: rgb(228, 226, 226);
+}
+
+@keyframes bounce {
+    0% {transform: translate(0px, 30px);}
+    /* 25% {transform: translate(0px, 20px);} */
+    50% {transform: translate(0px, 0px);}
+    /* 75% {transform: translate(0px, 35px);} */
+    100% {transform: translate(0px, 30px);}
+}
+
+@keyframes goround {
+    from{
+        transform: rotateY(0deg);
+    }
+    to{
+        transform: rotateY(360deg);
+    }
+}
+
+
+.animtext:hover{
+    animation: goround 1.5s 1 linear;
+    
+}
+
+.animtext:hover::after{
+    content: "😃";
+    font-size: 70px;
+    opacity: 0.7;
+}
+

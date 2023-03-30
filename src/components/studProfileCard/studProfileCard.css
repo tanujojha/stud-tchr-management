@@ -1,0 +1,101 @@
+:root{
+    --font_Rubik: 'Rubik', sans-serif;
+    --text_color: rgb(7, 7, 65);
+}
+
+.profilecardmain{
+    width: 500px;
+    margin: 20px 0;
+    border: 1px solid gray;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px gray;
+    padding-top: 10px;
+}
+
+/* ############### TOP DIV ########### */
+.topdiv{
+    padding: 5px 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* image  */
+.profilecardimg{
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* name age gender  div*/
+.nagdiv{
+    width: 60%;
+}
+.profileusername{
+    margin-top: 40px;
+    font-family: var(--font_Julee);
+    color: var(--text_color);
+}
+
+/* age and gender div */
+.agdiv{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 0;
+}
+
+span{
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(46, 49, 52);
+    font-size: large;
+}
+
+.age{
+    font-family: var(--font_Julee);
+    color: var(--text_color);
+}
+
+.gender{
+    font-family: var(--font_Julee);
+    color: var(--text_color);
+}
+
+
+/* ################### MID DIV ################ */
+.middiv{
+    margin: 30px 0;
+}
+.email, .class, .section{
+    font-size: 15px;
+    font-family: var(--font_Julee);
+    color: var(--text_color);
+}
+
+.createdat{
+    color: var(--text_color);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 12px;
+}
+
+
+/* ################# BOTTOM DIV #################### */
+.botdiv{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15px;
+}
+
+#editicon{
+    font-size: 30px !important;
+    color: blue;
+    cursor: pointer;
+}
+
+#deleteicon{
+    font-size: 30px !important;
+    color: red;
+    cursor: pointer;
+}
+
+
+

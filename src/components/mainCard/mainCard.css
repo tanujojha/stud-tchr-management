@@ -1,0 +1,58 @@
+.cardmain{
+    width: 250px;
+    margin: 20px 0;
+    border: 1px solid gray;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px gray;
+    padding-top: 10px;
+}
+
+.cardimgdiv{
+    border-radius: 10px;
+}
+
+.cardimg{
+    width: 90%;
+    height: 210px;
+    border-radius: 50%;
+}
+
+.cardbody > *{
+    text-align: center;
+    margin: 20px 0;
+    padding-bottom: 20px;
+        
+}
+
+.username{
+    font-family: var(--font_Julee);
+}
+
+.iconsdiv{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-bottom: 15px;
+}
+
+.editicon{
+    font-size: 30px !important;
+    color: blue;
+    cursor: pointer;
+}
+
+.deleteicon{
+    font-size: 30px !important;
+    color: red;
+    cursor: pointer;
+}
+
+.viewprofilebtn{
+    font-weight: 600 !important;
+    border-color: blue !important;
+}
+
+.viewprofilebtn:hover{
+    background-color: rgb(104, 104, 153) !important;
+    color: white !important;
+}

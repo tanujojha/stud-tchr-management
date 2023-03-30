@@ -1,0 +1,9 @@
+.maindiv{
+    background-color: rgb(174, 174, 210);
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    height: 500px;
+} 
