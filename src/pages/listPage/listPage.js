@@ -1,7 +1,6 @@
 import React, { useContext, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import MainCard from '../../components/mainCard/mainCard';
-import ProfileCard from '../../components/studProfileCard/studProfileCard';
 import { StudContext, TchrContext } from '../../context/stud-tchrContext';
 import "./listPage.css";
 

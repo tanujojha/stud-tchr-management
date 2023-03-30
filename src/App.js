@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import LtFltPane from './components/ltFltPane/ltFltPane';
@@ -14,7 +13,6 @@ import ProfilePage from './pages/profilePage/profilePage';
 
 function App() {
 
-  const [type, setType] = useState("")
 
   return (
     <div className="App">

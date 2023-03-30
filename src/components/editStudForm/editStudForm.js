@@ -1,26 +1,13 @@
-import React, { useContext, useEffect } from 'react';
+import React, { useContext } from 'react';
 import "./editStudForm.css";
 import Button from '@mui/material/Button';
 import { StudContext } from '../../context/stud-tchrContext';
 import { useFormik } from 'formik';
-import { useLocation } from 'react-router-dom';
 
 function EditStudForm() {
 
-
-    // const location = useLocation()
-    // const path = location.pathname
-    // const locarr = path.split("/")
-    // const id = locarr[locarr.length-1]
-
     const studContext = useContext(StudContext);
-    const {getSingleStud, singleStud, editStudProfile} = studContext;
-    // console.log(singleStud);
-    
-    // useEffect(()=>{
-    //     getSingleStud(id)
-    // }, [])
-
+    const {singleStud, editStudProfile} = studContext;
 
     const formik = useFormik({
         initialValues: {

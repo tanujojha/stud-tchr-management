@@ -18,8 +18,6 @@ function ProfilePage() {
   let id = locarr[locarr.length-1]
   
   useEffect(()=>{
-    // console.log(location.pathname);
-    // console.log(type);
  
     if(path.includes("/profile/stud")){
       getSingleStud(id);
@@ -53,17 +51,6 @@ function ProfilePage() {
  }
 
 
-  // if(location.pathname === "")
-  
-
-  // return (
-  //   <div className='profilepagediv'>
-  //       <div className='innerlistpage'>
-         
-  //         <TchrProfileCard/>
-  //       </div>
-  //   </div>
-  // )
 }
 
 export default ProfilePage

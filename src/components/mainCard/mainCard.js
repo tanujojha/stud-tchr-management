@@ -18,7 +18,6 @@ function MainCard({user}) {
 
 
   const handelClick = ()=>{
-    // console.log(type);
     if(path === "/studs"){
       getSingleStud(user.id);
       navigate(`/profile/stud/${user.id}`)
@@ -36,7 +35,6 @@ function MainCard({user}) {
         <div className='cardbody'>
             <h5 className='username'>{user.name}</h5>
             <Button onClick={handelClick} className='viewprofilebtn' variant="outlined" color="primary" sx={{width: "100%"}}>View Profile</Button>
-            {/* <Button className='viewprofilebtn' variant="outlined" color="primary" sx={{width: "100%"}}>View Profile</Button> */}
 
         </div>
     </div>

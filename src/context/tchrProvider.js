@@ -7,7 +7,6 @@ const TchrProvider = ({children})=>{
 
   const API_KEY = process.env.REACT_APP_MOCK_API_KEY;
   const url = `https://${API_KEY}.mockapi.io/stud-tchr`;
-  // const url = "https://641e92edf228f1a83ea633e4.mockapi.io/stud-tchr"
   const navigate = useNavigate()
 
     const [tchrs, setTchrs] = useState([]);
@@ -33,9 +32,6 @@ const TchrProvider = ({children})=>{
         const res = await fetch(`${url}/teacher/${id}`);
         const data = await res.json();
         setSingleTchr(data);
-        // res.status === 200 
-        // ? navigate(`/profile/tchr/${id}`) 
-        // : console.log("something went wrong while fetching single user");
         
       } catch (error) {
         console.log(error);
@@ -87,8 +83,6 @@ const TchrProvider = ({children})=>{
         const res = await fetch(`${url}/teacher/${id}`,{
           method: "DELETE",
         });
-        // const data = await res.json();
-        // console.log(data);
         res.status === 200 ? navigate("/tchrs") : console.log("something went wrong while deleting user");
         
       } catch (error) {
